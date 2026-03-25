@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # AI-Powered-Task-Scheduler
+=======
+# Tiny_Project: AI-Powered Task Scheduler
+
+>>>>>>> cbb4d44 (Initialize project with AI task scheduler, .gitignore, and README)
 Tiny_Project is an intelligent task scheduling system that optimizes your daily routine based on your physical and mental stamina. It uses Large Language Models (LLMs) to categorize tasks and a custom algorithm to prevent burnout by tracking fatigue levels.
 
 ## 🚀 Features
@@ -28,6 +33,11 @@ Tiny_Project/
 │   ├── templates/       # HTML view files
 │   └── static/          # CSS styles & client-side JS logic
 ├── .env                 # Environment variables (API keys)
+<<<<<<< HEAD
+=======
+├── .gitignore           # Files excluded from Git
+├── requirements.txt     # Python dependencies
+>>>>>>> cbb4d44 (Initialize project with AI task scheduler, .gitignore, and README)
 └── README.md            # You are here!
 ```
 
@@ -35,8 +45,13 @@ Tiny_Project/
 
 1. **Clone the repository**:
    ```bash
+<<<<<<< HEAD
    git clone <repository-url>
    cd Tiny_Project
+=======
+   git clone https://github.com/MoyukHNaskaR/AI-Powered-Task-Scheduler
+   cd AI-Powered-Task-Scheduler
+>>>>>>> cbb4d44 (Initialize project with AI task scheduler, .gitignore, and README)
    ```
 
 2. **Set up Virtual Environment**:
@@ -47,7 +62,11 @@ Tiny_Project/
 
 3. **Install Dependencies**:
    ```bash
+<<<<<<< HEAD
    pip install flask groq python-dotenv
+=======
+   pip install -r requirements.txt
+>>>>>>> cbb4d44 (Initialize project with AI task scheduler, .gitignore, and README)
    ```
 
 4. **Configure Environment Variables**:
@@ -68,3 +87,9 @@ Tiny_Project/
    - Set your name and stamina levels.
    - Add tasks with names, durations, and optional deadlines.
    - Run the scheduler to see your optimized timeline!
+<<<<<<< HEAD
+=======
+
+---
+*Created as part of the AI Lab series.*
+>>>>>>> cbb4d44 (Initialize project with AI task scheduler, .gitignore, and README)

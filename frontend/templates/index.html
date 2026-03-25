@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Scheduler - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>Agentic Scheduler</h1>
+        <p>Set up your profile and stamina attributes</p>
+        
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label>Brain Stamina (1-5 stars)</label>
+                <div class="star-rating" id="brain-rating">
+                    <span data-val="1">★</span><span data-val="2">★</span><span data-val="3">★</span><span data-val="4">★</span><span data-val="5">★</span>
+                </div>
+                <input type="hidden" id="brain_stamina" value="3">
+            </div>
+            
+            <div class="form-group">
+                <label>Body Stamina (1-5 stars)</label>
+                <div class="star-rating" id="body-rating">
+                    <span data-val="1">★</span><span data-val="2">★</span><span data-val="3">★</span><span data-val="4">★</span><span data-val="5">★</span>
+                </div>
+                <input type="hidden" id="body_stamina" value="3">
+            </div>
+            
+            <button type="submit" class="btn">Continue</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

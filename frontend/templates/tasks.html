@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Scheduler - Tasks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card large-card">
+        <h1>Let's Plan Your Day</h1>
+        <p>Add the tasks you need to complete.</p>
+        
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Duration (min)</th>
+                    <th>Deadline (min from now, optional)</th>
+                </tr>
+            </thead>
+            <tbody id="taskBody">
+            </tbody>
+        </table>
+        
+        <div class="action-buttons">
+            <button class="btn secondary" onclick="addTaskRow()">Add Task</button>
+            <button class="btn" id="submitTasksBtn" onclick="submitTasks()">Submit Schedule</button>
+        </div>
+    </div>
+    
+    <div class="overlay" id="loadingOverlay" style="display: none;">
+        <div class="loader"></div>
+        <div class="loading-text" id="loadingText">Analyzing tasks...</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            addTaskRow();
+        });
+    </script>
+</body>
+</html>
